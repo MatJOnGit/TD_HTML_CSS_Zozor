@@ -1,3 +1,13 @@
 /* Feuille de style */
 
+body{
+	background: url("images/fond_jaune.png");
+}
 
+header{
+	display: flex;
+}
+
+li{
+	display: inline;
+}
