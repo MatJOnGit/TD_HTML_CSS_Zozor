@@ -1,13 +1,62 @@
 /* Feuille de style */
 
+@font-face{
+	font-family: 'ballpark';
+	src: url('polices/ballpark.eot');
+	src: url('polices/ballpark.svg'), url('polices/ballpark.ttf'), url('polices/ballpark.woff');
+}
+
+@font-face{
+	font-family: 'dayrom';
+	src: url('polices/dayrom.eot');
+	src: url('polices/dayrom.svg'), url('polices/dayrom.ttf'), url('polices/dayrom.woff');
+}
+
 body{
 	background: url("images/fond_jaune.png");
+	margin: 0 0 0 0;
 }
 
 header{
+	background-color: #FFF5B3;
 	display: flex;
+}
+
+#logo{
+	background: black;
+}
+
+h1{
+	background: blue;
+	font-weight: bold;
+	font-family: 'ballpark';
+	font-size: 2.2em;
+}
+
+h2{
+	background: red;
 }
 
 li{
 	display: inline;
 }
+
+nav{
+	background-color: #33CC40;
+	display: flex;
+	justify-content: space-around;
+}
+
+a{
+	font-size: 2em;
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #BA0000;
+	text-decoration: underline;
+	text-decoration-color: #BA0000;
+	color: Tomato;
+}
+
