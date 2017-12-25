@@ -17,6 +17,10 @@ body{
 	margin: 0 0 0 0;
 }
 
+#main_wrapper{
+
+}
+
 header{
 	background: url('images/separateur.png') repeat-x bottom;
 	display: flex;
@@ -27,7 +31,7 @@ header{
 #encart_logo{
 	display: flex;
 	flex-direction: column;
-	margin-left: 2%;
+	margin-left: 25%;
 	margin-top : 1%;
 }
 
@@ -64,15 +68,16 @@ h2{
 nav{
 	width: 30%;
 	margin-bottom: 0.5em;
+	margin-right: 18.5%;
 }
 
 /* Alignement de la liste de nav */
-ul{
+nav ul{
 	list-style-type: none;
 	display: flex;
 }
 
-li{
+nav ul li{
 	margin-right: 8%;
 	font-family: Trebuchet MS;
 	font-weight: normal;
@@ -80,14 +85,23 @@ li{
 }
 
 /* Gestion du menu de navigation */
-a{
+nav ul li a{
 	font-size: 1.5em;
 	color: black;
 	text-decoration: none;
 }
 
-a:hover{
+nav ul li a:hover{
 	color: #BA0000;
 	text-decoration: underline;
 	text-decoration-color: #BA0000;
+}
+
+#banniere{
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+#banniere img{
 }
