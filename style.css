@@ -12,6 +12,17 @@
 	src: url('polices/dayrom.svg'), url('polices/dayrom.ttf'), url('polices/dayrom.woff');
 }
 
+/* Définition des polices de base */
+
+h2, p, article h1 {
+	font-family: Trebuchet MS;
+}
+
+nav ul li a, section h1, aside h1 {
+	font-family: 'dayrom';
+	text-transform: uppercase;
+}
+
 body {
 	background: url("images/fond_jaune.png");
 }
@@ -21,7 +32,7 @@ body {
 	margin: auto;
 }
 
-/* Header : L.26 à L.100*/
+/* Header : L.34 à L.107 */
 
 header {
 	background: url('images/separateur.png') repeat-x bottom;
@@ -58,7 +69,6 @@ header {
 
 h2 {
 	margin-top: 0;
-	font-family: Trebuchet MS;
 	font-weight: bold;
 	color: #413F3C;
 	font-size: 1.1em;
@@ -80,12 +90,12 @@ nav ul {
 }
 
 nav ul li {
+	height: 30px;
 	margin-right: 13%;
 }
 
 /* Gestion du menu de navigation */
 nav ul li a {
-	font-family: 'dayrom';
 	font-size: 1.2em;
 	font-weight: bold;
 	color: #413F3C;
@@ -94,11 +104,10 @@ nav ul li a {
 
 nav ul li a:hover {
 	color: #BA0000;
-	text-decoration: underline;
-	text-decoration-color: #BA0000;
+	border-bottom: 2.5px #BA0000 solid;
 }
 
-/* Bannière : L.104 à L.? */
+/* Bannière : L.106 à L.? */
 
 #banniere {
 	background-image: url(images/sanfrancisco.jpg);
@@ -155,10 +164,84 @@ nav ul li a:hover {
 	align-items: center;
 
 	text-decoration: none;
-	font-family: Trebuchet MS;
 }
 
 .banniere a img {
 	width: 7px;
 	height: 11px;
+}
+
+/* Section (L.173 à L.?) */
+
+section {
+	width: 950px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 12px;
+	display: flex;
+	justify-content: space-between;
+}
+
+article {
+	width: 70%;
+}
+
+.en-tete_article {
+	height: 47px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.en-tete_article img {
+	width: 43px;
+	height: 47px;
+}
+
+.en-tete_article h1 {
+	height: 47px;
+	height: 47px;
+	margin-left: 5px;
+	margin-bottom: 0px;
+	display: flex;
+}
+
+article h1 {
+	font-weight: normal;
+}
+
+article p {
+	text-align: justify;
+	font-size: 0.9em;
+}
+
+article span {
+	color: #BA0000;
+	border-bottom: 1px #BA0000 solid;
+}
+
+aside {
+	width: 28%;
+	background-color: #6F6A63;
+	display: flex;
+	flex-direction: column;
+}
+
+aside h1, aside p {
+	color: #FEFEFE;
+	font-weight: normal;
+}
+
+aside p {
+	font-size: 0.9em;
+}
+
+aside img {
+	width: 139px;
+	height: 116px;
+}
+
+.reseaux_sociaux img {
+	width: 42px;
+	height: 42px
 }
