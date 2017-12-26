@@ -14,11 +14,11 @@
 
 body{
 	background: url("images/fond_jaune.png");
-	margin: 0 0 0 0;
 }
 
 #main_wrapper{
-
+	width: 1050px; /*définition d'une largeur de page à 1000px pour avoir le même rendu que l'image */
+	margin: auto;
 }
 
 header{
@@ -31,7 +31,7 @@ header{
 #encart_logo{
 	display: flex;
 	flex-direction: column;
-	margin-left: 25%;
+	margin-left: 5%;
 	margin-top : 1%;
 }
 
@@ -58,17 +58,18 @@ h1{
 h2{
 	margin-top: 0;
 	font-family: Trebuchet MS;
-	font-weight: normal;
+	font-weight: bold;
+	color: #413F3C;
 	font-size: 1.1em;
 	display: flex;
 	align-items: flex-start;
-	opacity: 0.8;
 }
 
 nav{
 	width: 30%;
 	margin-bottom: 0.5em;
-	margin-right: 18.5%;
+	margin-right: 15%;
+	font-weight: normal;
 }
 
 /* Alignement de la liste de nav */
@@ -78,16 +79,15 @@ nav ul{
 }
 
 nav ul li{
-	margin-right: 8%;
-	font-family: Trebuchet MS;
-	font-weight: normal;
-	opacity: 0.8;
+	margin-right: 13%;
 }
 
 /* Gestion du menu de navigation */
 nav ul li a{
-	font-size: 1.5em;
-	color: black;
+	font-family: 'dayrom';
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #413F3C;
 	text-decoration: none;
 }
 
