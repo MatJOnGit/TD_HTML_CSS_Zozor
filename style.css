@@ -1,53 +1,54 @@
 /* Feuille de style */
 
-@font-face{
+@font-face {
 	font-family: 'ballpark';
 	src: url('polices/ballpark.eot');
 	src: url('polices/ballpark.svg'), url('polices/ballpark.ttf'), url('polices/ballpark.woff');
 }
 
-@font-face{
+@font-face {
 	font-family: 'dayrom';
 	src: url('polices/dayrom.eot');
 	src: url('polices/dayrom.svg'), url('polices/dayrom.ttf'), url('polices/dayrom.woff');
 }
 
-body{
+body {
 	background: url("images/fond_jaune.png");
 }
 
-#main_wrapper{
+#main_wrapper {
 	width: 1050px; /*définition d'une largeur de page à 1000px pour avoir le même rendu que l'image */
 	margin: auto;
 }
 
-header{
+/* Header : L.26 à L.100*/
+
+header {
 	background: url('images/separateur.png') repeat-x bottom;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
 }
 
-#encart_logo{
+#encart_logo {
 	display: flex;
 	flex-direction: column;
 	margin-left: 5%;
 	margin-top : 1%;
 }
 
-.logo{
+.logo {
 	display: flex;
 	align-items: baseline;
     height: 60px;
 }
 
-.logo img
-{
+.logo img {
     width: 59px;
     height: 60px;
 }
 
-h1{
+.logo h1 {
 	margin-top: 0;
 	margin-left: 0.4em;
 	font-family: 'ballpark';
@@ -55,7 +56,7 @@ h1{
 	display: flex;
 }
 
-h2{
+h2 {
 	margin-top: 0;
 	font-family: Trebuchet MS;
 	font-weight: bold;
@@ -65,7 +66,7 @@ h2{
 	align-items: flex-start;
 }
 
-nav{
+nav {
 	width: 30%;
 	margin-bottom: 0.5em;
 	margin-right: 15%;
@@ -73,17 +74,17 @@ nav{
 }
 
 /* Alignement de la liste de nav */
-nav ul{
+nav ul {
 	list-style-type: none;
 	display: flex;
 }
 
-nav ul li{
+nav ul li {
 	margin-right: 13%;
 }
 
 /* Gestion du menu de navigation */
-nav ul li a{
+nav ul li a {
 	font-family: 'dayrom';
 	font-size: 1.2em;
 	font-weight: bold;
@@ -91,17 +92,73 @@ nav ul li a{
 	text-decoration: none;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
 	color: #BA0000;
 	text-decoration: underline;
 	text-decoration-color: #BA0000;
 }
 
-#banniere{
-	margin-top: 20px;
-	display: flex;
-	justify-content: center;
+/* Bannière : L.104 à L.? */
+
+#banniere {
+	background-image: url(images/sanfrancisco.jpg);
+	width : 950px;
+	height: 219px;
+
+	margin: auto;
+	margin-top: 12px;
+	margin-bottom: 12px;
+
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0px 2px 0.5px grey;
+
+	position: relative;
 }
 
-#banniere img{
+.lisere_banniere {
+	position: absolute;
+	bottom: 0;
+
+	width: 950px;
+	height: 45px;
+	border-radius: 0px 0px 5px 5px;
+
+	background-color: rgba(0,0,0,0.6);
+
+	color: #C1BFB1;
+	font-size: 0.9em;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.lisere_banniere p {
+	margin-left: 8px;
+}
+
+.lisere_banniere a {
+	background: url("images/fond_degraderouge.png") repeat-x;
+	width: 100px;
+	height: 29px;
+	border-radius: 5px 5px 5px 5px;
+
+	margin-right: 8px;
+	padding-left: 5px;
+	padding-right: 5px;
+
+	color: white;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	text-decoration: none;
+	font-family: Trebuchet MS;
+}
+
+.banniere a img {
+	width: 7px;
+	height: 11px;
 }
