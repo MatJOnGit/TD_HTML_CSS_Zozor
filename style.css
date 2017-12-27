@@ -1,5 +1,7 @@
 /* Feuille de style */
 
+/* Définition des polices utilisées, de l'image de fond du site et de la largeur du contenu */
+
 @font-face {
 	font-family: 'ballpark';
 	src: url('polices/ballpark.eot');
@@ -12,13 +14,11 @@
 	src: url('polices/dayrom.svg'), url('polices/dayrom.ttf'), url('polices/dayrom.woff');
 }
 
-/* Définition des polices de base */
-
 h2, p, article h1 {
 	font-family: Trebuchet MS;
 }
 
-nav ul li a, article h1, aside h1 {
+nav ul li a, article h1, aside h1, footer h1 {
 	font-family: 'dayrom';
 	text-transform: uppercase;
 }
@@ -32,7 +32,7 @@ body {
 	margin: auto;
 }
 
-/* Header : L.34 à L.107 */
+/* Header : L.35 à L.108 */
 
 header {
 	background: url('images/separateur.png') repeat-x bottom;
@@ -51,7 +51,7 @@ header {
 .logo {
 	display: flex;
 	align-items: baseline;
-    height: 60px;
+    height: 4em;
 }
 
 .logo img {
@@ -107,7 +107,7 @@ nav ul li a:hover {
 	border-bottom: 2.5px #BA0000 solid;
 }
 
-/* Bannière : L.106 à L.? */
+/* Bannière : L.112 à L.172 */
 
 #banniere {
 	background-image: url(images/sanfrancisco.jpg);
@@ -174,17 +174,19 @@ nav ul li a:hover {
 /* Section (L.173 à L.?) */
 
 section {
-	width: 950px;
+	width: 1050px;
 	margin: auto;
 	margin-top: 30px;
 	margin-bottom: 12px;
 	display: flex;
 	justify-content: space-between;
+	background: url('images/separateur.png') repeat-x bottom;
 }
 
 article {
 	width: 670px;
 	height: 480px;
+	margin-left: 50px;
 }
 
 .en-tete_article {
@@ -223,12 +225,24 @@ article span {
 
 aside {
 	width: 260px;
-	height: 400px;
+	height: 410px;
 	border-radius: 7px 7px 7px 7px;
 	background-color: #6F6A63;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
+	margin-right: 50px;
+}
+
+#bulle {
+	position: absolute;
+	top: 130px;
+	left: -12px;
+	border: 0;
+
+	width: 12px;
+	height: 17px;
 }
 
 aside h1, aside p {
@@ -246,6 +260,7 @@ aside p {
 aside img {
 	width: 139px;
 	height: 116px;
+	border: 2px #677179 solid;
 }
 
 .reseaux_sociaux {
@@ -260,4 +275,46 @@ aside img {
 .reseaux_sociaux img {
 	width: 42px;
 	height: 42px
+}
+
+footer {
+	margin: 35px 50px 0 50px;
+	width: 950px;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer div {
+	width: 300px;
+}
+
+footer h1 {
+	width: 90%;
+	margin-left: 5px;
+	font-size: 1em;
+	border-left: ;
+}
+
+footer p {
+	font-size: 0.9em;
+}
+
+.photos_usa {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer img {
+	width: 69px;
+	height: 69px;
+	border: 1px black solid;
+	border-radius: 2px 2px 2px 2px;
+}
+
+footer ul {
+	list-style-image: url("images/ico_liensexterne.png")
+}
+
+footer li {
+	margin-left: 0px;
 }
